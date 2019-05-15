@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>方永志的个人主页</title>
+    <h1 color="red">登录</h1>
+
+    <style type="text/css">
+    div#global{
+        width:100%;
+        height:1000px;
+        background-color:silver;    
+    }
+    #heading{
+        width:100%;
+        height:300px;
+        background-color:#BB80F7;
+    }
+    #content_menu{
+        width:40%;
+        height:800px;
+        background-color:#C5E9F3;
+        background-image: url(images/timg3.jpg);
+        background-size:100%,100%;
+        float:left;
+    }
+
+    #content_body{
+        width:60%;
+        height:800px;
+        background-image: url(images/timg.jpg);
+        background-color:#F7575D;
+        float:right;
+        background-size:100%,100%
+    }
+    #floor{
+        clear:both;
+        height:200px;
+        background-color:#8080FF;
+        background-image: url(images/timg4.jpg);
+        background-size:100%,100%;
+    }
+    </style>
+
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <table style="border-collapse:separate; border-spacing:0px;" width="100%" height="240px"
+        background="F:\浏览器下载\Android\timg2.jpg" align="left">
+        <tr height="60px">
+            <td>
+                <p style="font-size:20px">用户名
+                    <input id="username" type="text" name="username" value="">
+                </p>
+
+            </td>
+        </tr>
+        <tr height="60px">
+            <td>
+                <p style="font-size: 20px">密&nbsp&nbsp&nbsp码
+                    <input id="password" type="password"  name="password" value="">
+                </p>
+            </td>
+        </tr>
+        <tr width="40px" height="20px" align="left">
+            <td>
+                <button type="button" onclick="check('');">登录</button>
+                <a href="https://mail.qq.com" title="发送邮件至2463185230@qq.com">联系作者</a>
+            </td>
+        </tr>
+
+        <!-- <button onclick="getElementById('demo').innerHTML=Date()">现在的时间是</button> -->
+
+    </table>    
+    
+
+    <div id="global">
+        <div id="content_menu"></div>
+        <div id="content_body"></div>
+
+    </div>
+    
+    <!-- <div id="global" width="100%" ;height=800px;background-color:#B8F>
+        <div id="top" width="100%" height="100px" ,background-color=#BB80F7>头部
+        </div>
+        <div id="left" width="20%" ,height=100px;backgronud-color:#C5E9F3;float:left;>左边
+        </div>
+        <div id=floor clear="both" ;height="100px" ;backgronud-color="#8080FF">右边
+        </div>
+    
+    
+    </div> -->
+
+
+
+    <script type="text/javascript">
+        function check() {
+            if (username.value == "fang" && password.value == "123456") {
+                // window.location.href="http://www.baidu.com"；
+                alert("登录成功");
+                window.location.href = 'Home.html';
+            }
+            else if (username.value == "" && password.value == "") {
+                alert("请输入用户名和密码");
+            }
+            else {
+                alert("账号或者密码有误！");
+                password.value = "";
+            }
+        }
+
+        function link(){
+            
+        }
+
+    </script>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="" async defer></script>
+</body>
+
+</html>
