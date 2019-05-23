@@ -10,43 +10,49 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>方永志的个人主页</title>
-    <h1 color="red">登录</h1>
+    <h2>登录</h2>
 
     <style type="text/css">
-    div#global{
+    .global{
         width:100%;
-        height:1000px;
+        height:640px;
         background-color:silver;    
     }
-    #heading{
+    .heading{
         width:100%;
-        height:300px;
+        height:200px;
         background-color:#BB80F7;
     }
-    #content_menu{
+    .left{
         width:40%;
-        height:800px;
+        height:480px;
         background-color:#C5E9F3;
         background-image: url(images/timg3.jpg);
         background-size:100%,100%;
         float:left;
     }
 
-    #content_body{
+    .right{
         width:60%;
-        height:800px;
+        height:480px;
         background-image: url(images/timg.jpg);
         background-color:#F7575D;
         float:right;
         background-size:100%,100%
     }
-    #floor{
-        clear:both;
-        height:200px;
-        background-color:#8080FF;
-        background-image: url(images/timg4.jpg);
-        background-size:100%,100%;
-    }
+    #footer {
+                height: 40px;
+                line-height: 40px;
+                /* position: fixed; */
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                background: #333;
+                color: #fff;
+                font-family: Arial;
+                font-size: 12px;
+                letter-spacing: 1px;
+            }
     </style>
 
 
@@ -57,7 +63,7 @@
 
 <body>
 
-    <table style="border-collapse:separate; border-spacing:0px;" width="100%" height="240px"
+    <table style="border-collapse:separate; border-spacing:0px;" width="100%" height="160px"
         background="F:\浏览器下载\Android\timg2.jpg" align="left">
         <tr height="60px">
             <td>
@@ -77,19 +83,20 @@
         <tr width="40px" height="20px" align="left">
             <td>
                 <button type="button" onclick="check('');">登录</button>
-                <a href="https://mail.qq.com" title="发送邮件至2463185230@qq.com">联系作者</a>
+                <a href="mailto:2463185230@qq.com" title="发送邮件至2463185230@qq.com">联系作者</a>
             </td>
         </tr>
-
-        <!-- <button onclick="getElementById('demo').innerHTML=Date()">现在的时间是</button> -->
 
     </table>    
     
 
-    <div id="global">
-        <div id="content_menu"></div>
-        <div id="content_body"></div>
-
+    <div class="global">
+        <div class="left"></div>
+        <div class="right"></div>
+        
+    </div>
+    <div id="footer">
+        <p>作者：方永志 qq：2463185230</p>
     </div>
     
     <!-- <div id="global" width="100%" ;height=800px;background-color:#B8F>
@@ -126,9 +133,6 @@
         }
 
     </script>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
     <script src="" async defer></script>
 </body>
