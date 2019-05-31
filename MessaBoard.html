@@ -3,14 +3,84 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>网页留言板版源码示例</title>
+    <title>留言板</title>
+    <style type=text/css>
+           
+
+        li
+        {
+            font-size:20px;color:#c8def7;font-family: 宋体；
+        }      
+        
+        .head
+        {
+            width: 1340px;
+            height: 80px;
+            background-image: url(images/background.jpg);
+            padding-left: 180px;
+
+        }
+        
+        #n li{float:left;}
+        #n li a{
+            font-size:16px;color: #FFF;font-family: 宋体;
+            color:#FFF;
+            text-decoration: none;
+            padding-top: 2px;
+            display: block;
+            width:180px;
+            height:30px;
+            text-align:center;
+            background-color:#990;
+            margin-left:4px;
+        }
+        #n li a:hover{
+            background-color: #99F;
+            color:#FFF;
+        }
+
+        #footer {
+            height: 30px;
+            line-height: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background: #333;
+            color: #fff;
+            font-family: Arial;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+        </style>
 </head>
 
 <body>
-    <h1>简易留言板</h1>
+
+    <div class="head" >
+            
+        <div id="n" ,width="480px" ,height="120px" >
+            <ul>
+                <li><a href="Home.html">首页</a></li>
+                <li><a href="Picture.html">个人相册</a></li>
+                <li><a href="Fang.html">个人简介</a></li>
+                <li><a href="Game.html">娱乐天地</a></li>
+                <li><a href="MessaBoard.html">留言板</a></li>
+                <li><a href="Link.html">学习链接</a></li>
+            </ul>
+    
+    
+        </div>
+    </div>
+    <br>
+    <div id="footer">
+        <p>作者：方永志 qq：2463185230</p>
+    </div>
+
+    <h1>留言框</h1>
     <textarea id="memo" cols="60" rows="10"></textarea>
-    <input type="button" value="追加内容" onclick="saveStorage('memo')" />
-    <input type="button" value="初始化" onclick="clearStorage('msg')" />
+    <input type="button" value="留言" onclick="saveStorage('memo')" />
+    <input type="button" value="清空内容" onclick="clearStorage('msg')" />
     <hr />
     <p id="msg"></p>
     <script type="text/javascript">
@@ -18,19 +88,20 @@
             var data = document.getElementById(id).value;
             var time = new Date().getTime();
             localStorage.setItem(time, data);
-            alert("数据已保存");
+            alert("留言成功");
             loadStorage('msg');
         }
 
         function loadStorage(id) {
             var result = '<table border="1">';
             for (var i = 0; i < localStorage.length; i++) {
-                var kes = localStorage.key(i);
-                var value = localStorage.getItem(kes);
+                var key = localStorage.key(i);
+                var value = localStorage.getItem(key);
                 var date = new Date();
-                date.setTime(kes);
+                date.setTime(key);
                 var datestr = date.toLocaleString();
                 result += '<tr><td>' + value + '</td><td>' + datestr + '</td></tr>'
+
             }
             result += '</table>';
             var target = document.getElementById(id);
@@ -39,7 +110,8 @@
 
         function clearStorage() {
             localStorage.clear();
-            alert("清除完毕");
+            alert("清空成功");
+            loadStorage('msg');
         }
     </script>
 </body>

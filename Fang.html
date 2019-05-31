@@ -9,33 +9,119 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>个人简介</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
 
-    <style type=text/css> body { font-size:12px;color:#c8def7;font-family: 宋体； } p {
-        font-size:12px;color:#c8def7;font-family: 宋体; } table { font-size:12px;color:#c8def7;font-family: 宋体； } tr {
-        font-size:12px;color:#c8def7;font-family: 宋体； } td { font-size:12px;color:#c8def7;font-family: 宋体； } A:link {
-        font-size:12px;color:#c8def7;font-family: 宋体； } A:visited { font-size:12px;color:#c8def7;font-family: 宋体； }
-        A:hover { font-size:12px;color:yellow;font-family: 宋体； } </style> <style>
-        #n li{float:left;}
-            #n li a{
-                color:#FFF;
-                text-decoration: none;
-                padding-top: 4px;
-                display: block;
-                width:160px;
-                height:20px;
-                text-align:center;
-                background-color:#990;
-                margin-left:2px;
-            }
-            #n li a:hover{
-                background-color: #99F;
-                color:#FFF;
-            }
-            </style>
+
+<style type=text/css>
+    /* body{
+        background-color: #333
+    } */
+           
+
+    li
+    {
+        font-size:20px;color:#c8def7;font-family: 宋体；
+    }      
+    
+    .head
+    {
+        width: 1340px;
+        height: 80px;
+        background-image: url(images/background.jpg);
+        padding-left: 180px;
+    }
+    .Introucce{
+        width: 1000px;
+        height:600px;
+        /* border:1px solid; */
+        margin: 0 auto;
+        background-image: url(images/me.jpg);
+    }
+    .right{
+        width: 120px;
+        height: 60px;
+        float: right;
+        /* border: 1px solid; */
+    }
+    .photo{
+        width:360px;
+        height: 480px;
+        /* border: #FFF 1px solid; */
+        float: right;
+        position: relative;
+        margin-top: 80px;
+        margin-right: 10px;
+    }
+    .text{
+        width:300px;
+        height: 100px;
+        /* border: #FFF 1px solid; */
+        float: left;
+        position: relative;
+        margin-top:30px;
+        margin-left: 30px;
+    }
+    .text2{
+        width:400px;
+        height: 400px;
+        /* border: #FFF 1px solid; */
+        float: left;
+        position: relative;
+        margin-top:0px;
+        margin-left: 30px;
+
+    }
+    .inner1{
+        float: left;
+        margin-left: 5px;
+        width:60px;
+        height:80px;
+        /* border: #FFF 1px solid; */
+    }
+    .inner2{
+        margin-top: 30px;
+        margin-right: 30px;
+        float: right;
+        width:200px;
+        height:70px;
+        /* border: #FFF 1px solid; */
+    }
+    
+    #n li{float:left;}
+    #n li a{
+        font-size:16px;color: #FFF;font-family: 宋体;
+        color:#FFF;
+        text-decoration: none;
+        padding-top: 2px;
+        display: block;
+        width:180px;
+        height:30px;
+        text-align:center;
+        background-color:#990;
+        margin-left:4px;
+    }
+    #n li a:hover{
+        background-color: #99F;
+        color:#FFF;
+    }
+
+    #footer {
+        height: 30px;
+        line-height: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background: #333;
+        color: #fff;
+        font-family: Arial;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    </style>
 
 </head>
 
@@ -44,38 +130,49 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <div id="n" ,width="480px" ,height="120px">
-        <ul>
-            <li><a href="Home.html">首页</a></li>
-            <li><a href="Photo.html">个人相册</a></li>
-            <li><a href="Fang.html">个人简介</a></li>
-            <li><a href="ContactMe.html">和我联系</a></li>
-            <li><a href="Diary.html">个人日记</a></li>
-            <li><a href="Link.html">友情链接</a></li>
-        </ul>
+        <div class="head" >
+            
+                <div id="n" ,width="480px" ,height="120px" >
+                    <ul>
+                        <li><a href="Home.html">首页</a></li>
+                        <li><a href="Picture.html">个人相册</a></li>
+                        <li><a href="Fang.html">个人简介</a></li>
+                        <li><a href="Game.html">娱乐天地</a></li>
+                        <li><a href="MessaBoard.html">留言板</a></li>
+                        <li><a href="Link.html">学习链接</a></li>
+                    </ul>
+            
+            
+                </div>
+        </div>
+        <br>
+        <div id="footer">
+            <p>作者：方永志 qq：2463185230</p>
+        </div>
+
+        <div class="Introucce" >
+            <div class="right">
+                <p style="font-size:16px;color: #FFF" >个人简介<br>Self-introdece</p>
+            </div>
+
+            <div class="photo">
+                <img width="340px" height="480px" src="images/Fang.JPG">
+            </div>
+            <div class="text">
+                    <div class="inner1">
+                        <p style="font-size:36px;color: #FFF ">我</p>
+                    </div>
+                    
+                    <div class="inner2">
+                        <p style="font-size:24px;color: red ">Me&nbspMyself&I </p>
+                    </div>
+            </div>
+            <div class="text2">
+                <p style="font-size:14px;font-family: 宋体;color: #FFF;line-height: 26px;">我叫方永志，来自湖北咸宁,今年21岁<br>我性格比较活泼，喜欢打篮球、计算机编程<br>喜欢打篮球时挥洒汗水，开心大笑的感觉<br>也同样喜欢编写代码，看到成果时会心一笑的感觉<br><br><br>目前的我已经大三了，即将面临实习找工作，但是感觉自己学的还不够，希望最近这段时间能多学一些计算机知识，为工作做好准备！</p>
+            </div>
 
 
-    </div>
-
-    <!-- <div id="div1" style="width:100px; height:100px; background:red;">
-
-    </div>
-    <script>
-    var adiv=document.getElementById('div1');
-    var colors=['green','black','pink','blue','yellow','gray','red'];
-    var i=0;
-    setInterval(function()
-    {
-    if(i==colors.length)
-    {
-    i=0;
-    }
-    adiv.style.backgroundColor=colors[i];
-    i++;
-    },1000)
-    </script> -->
-
-    <script src="" async defer></script>
+        </div>
 </body>
 
 </html>
